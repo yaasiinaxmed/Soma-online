@@ -168,10 +168,10 @@ nav{
     box-shadow: 0 1px 4px  rgba(146,161,176,0.15);
 }
 nav img{
-    width: 150px;
-    line-height: 80px;
+    width: 180px;
+    line-height: 80px;   
     position: absolute;
-    top: -6px;
+    top: -50px;        
     left: 12%;
     cursor: pointer;
    
@@ -621,11 +621,11 @@ footer p{
     }  
    
 }
-@media (max-width: 944px){
+@media (max-width: 946px){
     nav img{
         width: 130px;
         position: relative;
-        top: -2px;
+        top: -25px;
         left: 6%;    
     }
     
