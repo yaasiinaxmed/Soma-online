@@ -395,18 +395,6 @@ a{
   z-index: 100;
   cursor: pointer;
 }
-/* .video .active{
-  position: fixed;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  height: auto;
-  box-shadow: 0 0 0 100vh  rgba(0, 0, 0, .7); 
-  z-index: 1;
-}
-.video .active:hover{
-  transition: none;
-  transform: translate(-50%, -50%) scale(1);
-} */
 .price{
     font-weight: 600;
     font-size: 2rem;
