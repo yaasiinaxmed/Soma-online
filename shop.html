@@ -107,6 +107,7 @@
             <p>You can get gaming services such as Pubg mobile and pubg kr for free and they have a guaranteed guarantee.</p>
             <a href="https://wa.me/252611623058" class="s-btn">Buy</a>
             </div>
+            </div>
             <div class="s-box-container">
                 <!--box--------------------->      
                 <div class="s-box">
@@ -181,7 +182,12 @@
             <p>You can get gaming services such as Pubg mobile and pubg kr for free and they have a guaranteed guarantee.</p>
             <a href="https://wa.me/252611623058" class="s-btn">Buy</a>
             </div>   
-                                 
+
+            <div class="popup-video">
+              <span><i class="fas fa-times"></i></span>
+              <video src="pubg.mp4" autoplay controls></video>
+            </div>
+       </div>                           
     </section>       
     <paginition class="paginition">
        <span class="active">1</span>
@@ -209,25 +215,18 @@
 
      <script>
 
-      var video = document.querySelectorAll('video')
- 
-      video.forEach(play => play.addEventListener('click', () =>{
- 
-       play.classList.toggle('active');
- 
-       if(play.paused){
-         play.play();
-       }else{
-         play.pouse();
-         play.currentTime = 0;
-       }     
-       video[i].addEventListener('mouseout', function(e){
-         video[i].pause()
-       })
- 
-      }));  
-     
+     document.querySelectorAll('.s-box video').forEach(vid => {
+        vid.onclick = () =>{
+            document.querySelector('.popup-video').style.display = 'block';
+            document.querySelector('.popup-video video').src = vid.getAttribute('src');
+        }
+     });
     
+     document.querySelector('.popup-video span').onclick = () =>{
+      document.querySelector('.popup-video').style.display = 'none';
+
+     }
+
       </script>
  
 

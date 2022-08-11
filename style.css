@@ -354,23 +354,48 @@ a{
 .stars{
     color: orange;    
 }
-.video{
+.s-box-container .s-box .video{
    overflow: hidden;
    border-radius: 1rem;  
+   cursor: pointer;
 }
-.video video{
+.s-box-container .s-box .video video{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: none;
-  outline: none;
+  transition: .2s linear;  
+}
+.s-box-container .s-box .video video:hover{
+  transform:scale(1.1);
+}
+.s-box-container .popup-video{
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 100;
+  background: rgba(0,0,0,.8);
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+.s-box-container .popup-video video{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 750px;
+  border-radius: 5px;
+  border: 3px solid #fff;
+  object-fit: cover;
+}
+.s-box-container .popup-video span{
+  position: absolute;
+  top: 5px; right: 20px;
+  font-size: 35px;
+  color: white;
+  font-weight: bolder;
+  z-index: 100;
   cursor: pointer;
 }
-.video video:hover{
-  transition: .2s linear;
-  transform:scale(1.3);
-}
-.video .active{
+/* .video .active{
   position: fixed;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
@@ -381,7 +406,7 @@ a{
 .video .active:hover{
   transition: none;
   transform: translate(-50%, -50%) scale(1);
-}
+} */
 .price{
     font-weight: 600;
     font-size: 2rem;
@@ -666,6 +691,9 @@ footer p{
    h1{
     font-size: 1rem;
    }  
+   .s-box-container .popup-video video{
+    width: 95%;
+   }
     
 }
 @media (max-width: 379px){
